@@ -42,3 +42,6 @@ wget.download(url_capture)
 # pip install scrapy
 # scrapy startproject leroyparser .
 # scrapy genspider leroymerlinru leroymerlin.ru
+
+# еще надо будет это (для удобной работы с фотками)
+# pip install pillow

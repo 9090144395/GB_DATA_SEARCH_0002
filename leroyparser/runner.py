@@ -11,7 +11,10 @@ if __name__ == '__main__':
     settings = get_project_settings()
     runner = CrawlerRunner(settings)
     runner.crawl(LeroymerlinruSpider)
+    # runner.crawl(LeroymerlinruSpider, search='какой-то параметр в get запросе') # для примера
+    # далее нужно в родительском классе дописать - смотри метод init в пауке (закоменчен)
     # runner.crawl(SjruSpider)
+
 
     d = runner.join()
     d.addBoth(lambda _: reactor.stop())
